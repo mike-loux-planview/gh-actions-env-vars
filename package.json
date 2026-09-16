@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "dependencies": {
     "body-parser": "^2.3.0",
     "express": "^5.2.1",
