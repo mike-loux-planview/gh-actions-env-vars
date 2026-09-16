@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # This configures version updates (standard maintenance)
+  - package-ecosystem: "npm" # Swap for your primary ecosystem (pip, cargo, etc.)
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    
+    # This block groups ALL security alerts into a single PR across the repo
+    groups:
+      security-alerts-cleanup:
+        applies-to: security-updates
+        patterns:
+          - "*"
